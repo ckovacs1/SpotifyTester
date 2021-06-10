@@ -22,7 +22,7 @@ def createPlaylist(name, public):
 
 
 def main():
-    playlist = createPlaylist("benis songs", False)
+    playlist = createPlaylist("playlist", False)
 
     print(f"Playlist: {playlist}")
 
