@@ -3,7 +3,8 @@ import requests
 createPlaylistURL = 'https://api.spotify.com/v1/users/ckovacs11/playlists'
 addSongURL        = 'https://api.spotify.com/v1/playlists/{playlist_id}/tracks'
 
-accessToken = 'BQC7mjEOxak1FyDHid9Ql5bKwenAgD5X79CH7NMopeDEEGUCAdH_4aLm6ub6xrN-r7J12nw46zKXfcu8QV1cMSIB-IawoWDYUNMOGfopg-7uaH_Yqrm7aIjkEgrjtz3pUZ1POwQXykDsmRE4rHUpS9HZU8b6FELxBR-__ncXvGDteQ'
+#insert auth token 
+accessToken = ''
 
 def createPlaylist(name, public):
     response = requests.post(
