@@ -1,6 +1,7 @@
 import requests
 
-createPlaylistURL = 'https://api.spotify.com/v1/users/ckovacs11/playlists'
+#insert user id and playlist id for this to actually work 
+createPlaylistURL = 'https://api.spotify.com/v1/users/{user_id}/playlists'
 addSongURL        = 'https://api.spotify.com/v1/playlists/{playlist_id}/tracks'
 
 #insert auth token 
@@ -20,6 +21,8 @@ def createPlaylist(name, public):
 
     json_resp = response.json()
     return json_resp
+
+#TODO add function for adding songs to playlist 
 
 
 def main():
